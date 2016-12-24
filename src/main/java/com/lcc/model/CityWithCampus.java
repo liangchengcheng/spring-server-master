@@ -15,5 +15,5 @@ public class CityWithCampus extends City{
     public void setCampuses(ArrayList<Campus> campuses) {
         this.campuses = campuses;
     }
-    
+
 }
