@@ -1,0 +1,53 @@
+package com.lcc.service;
+
+import com.lcc.model.Campus;
+import com.lcc.model.CampusAdmin;
+import com.lcc.model.City;
+import com.lcc.model.CityWithCampus;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Created by lcc on 2016/12/25.
+ */
+public interface CampusService {
+
+    List<Campus> getAllCampus(Map<String, Object> paramMap);
+
+    List<CityWithCampus> getCampusWithCity(Map<String, Object> paramMap);
+
+    Integer getIdByName(Map<String, Object> paramMap);
+
+    public Integer closeCampus(Map<String, Object> requestMap);
+
+    public Campus getCampusById(Map<String, Object> paramMap);
+
+    public CampusAdmin getCampusIdByAdmin(Map<String, Object> paramMap);
+
+    public List<CampusAdmin> getAllCampusAdmin(Map<String, Object> paramMap);
+
+    public Integer updateCampusAdmin(Map<String, Object> paramMap);
+
+    public Map<String,Object> addCampus(Map<String, Object> paramMap);
+
+    Campus getCampus(Map<String, Object> paramMap);      //从订单信息里面获取校区信息
+
+    Integer deleteCampusAdmin(Map<String,Object> paramMap);		//删除某校区的某管理员
+
+    Integer addCampusAdmin(Map<String, Object> paramMap);	//添加校区管理员
+
+    List<City> getAllCity();			///返回所有城市
+
+    Integer addCity(Map<String, Object> paramMap);		//添加城市
+
+    City getCityByName(String cityName);
+
+    Integer updateCampus(Map<String, Object> paramMap);
+
+    String getOldPassword(Map<String, Object> paramMap);
+
+    int updateCampusAdminPassword(Map<String, Object> paramMap);
+
+    String getCampusName(Integer campusId);          //根据校区id获取校区名称
+}
