@@ -78,7 +78,6 @@ public class CalendarTool {
         try {
             date = sdf.parse(month);
         } catch (ParseException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         Map<String,Date> map = new HashMap<String, Date>();

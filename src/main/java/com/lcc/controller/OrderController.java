@@ -286,7 +286,6 @@ public class OrderController {
     @ResponseBody
     public Map<String, Object> getOrderInMineFinish(@RequestParam String phoneId) {
         Map<String, Object> map = new HashMap<String, Object>();
-
         try {
             List<SmallOrder> orderList = orderService
                     .getOrderListInMineFinish(phoneId);
@@ -325,11 +324,13 @@ public class OrderController {
                 paramMap.put("limit", limit);
                 paramMap.put("offset", (page - 1) * limit);
             }
+
             List<CartGood> orderList = orderService.getOrderList(paramMap);
             if (orderList != null && orderList.size() != 0) {
                 for (CartGood cartGood : orderList) {
                     if (cartGood.getIsDiscount() != 0) {
-                        cartGood.setDiscountPrice(cartGood.getDiscountPrice()); // 获取折扣价
+                        // 获取折扣价
+                        cartGood.setDiscountPrice(cartGood.getDiscountPrice());
                     }
                     paramMap.put("foodId", cartGood.getFoodId());
                     paramMap.put("campusId", campusId);
@@ -351,7 +352,7 @@ public class OrderController {
     }
 
     /**
-     * 删除购物车中的某一订单
+     * 删除购物车中的某一订单(get)
      */
     @RequestMapping("/deleteUserOrder")
     @ResponseBody
@@ -377,20 +378,18 @@ public class OrderController {
     }
 
     /**
-     * 删除多条订单，订单号用逗号隔开
+     * 删除多条订单，订单号用逗号隔开(get)
      */
     @RequestMapping("/deleteAllUserOrder")
     @ResponseBody
     public Map<String, Object> deleteAllUserOrder(@RequestParam String orderId, @RequestParam String phoneId) {
         Map<String, Object> map = new HashMap<String, Object>();
-
         try {
             int flag = 0;
             String[] orderIdStrings = orderId.split(",");
             for (String oneOrderId : orderIdStrings) {
                 if (oneOrderId != null && !oneOrderId.trim().equals("")) {
-                    flag = orderService.deleteUserOrder(
-                            Long.valueOf(oneOrderId), phoneId);
+                    flag = orderService.deleteUserOrder(Long.valueOf(oneOrderId), phoneId);
 
                     if (flag == -1 || flag == 0) {
                         map.put(Constants.STATUS, Constants.FAILURE);
@@ -414,7 +413,7 @@ public class OrderController {
     }
 
     /**
-     * 编辑订单的个数
+     * 编辑订单的个数(get)
      *
      * @param orderId    订单号
      * @param orderCount 订单数
@@ -444,7 +443,7 @@ public class OrderController {
     }
 
     /**
-     * 获取成功订单
+     * 获取成功订单 (get)
      *
      * @param phoneId 用户手机号
      */
@@ -606,29 +605,21 @@ public class OrderController {
     @ResponseBody
     public Map<String, Object> changeOrderStatus2Deliver(@RequestParam String adminPhone, @RequestParam final String togetherId) {
         Map<String, Object> map = new HashMap<String, Object>();
-
         try {
             int flag = orderService.changeOrderStatus2Deliver(adminPhone, togetherId);
-
             if (flag != -1 && flag != 0) {
-
                 map.put(Constants.STATUS, Constants.SUCCESS);
                 map.put(Constants.MESSAGE, "正在配送中！");
-
                 // 开启线程访问服务器进行推送
-
                 new Thread(new Runnable() {
 
-                    public void run() { //推送
+                    public void run() {
+                        //推送
                         String userPhone = userService.getUserPhone(togetherId);
                         System.out.println(userPhone);
-                        pushService.sendPush(userPhone,
-                                "您有一笔订单正在配送中,请稍候。感谢您对For优的支持", 1);
-
+                        pushService.sendPush(userPhone, "您有一笔订单正在配送中,请稍候。感谢您对For优的支持", 1);
                     }
                 }).start();
-
-
             } else {
                 map.put(Constants.STATUS, Constants.FAILURE);
                 map.put(Constants.MESSAGE, "点击配送失败，请重试");
@@ -661,12 +652,9 @@ public class OrderController {
 
                     public void run() {
                         //推送
-                        pushService.sendPush(userPhone,
-                                "您有一笔订单已完成交易,赶快去评价吧！For优欢迎您下次惠顾", 1);
-
+                        pushService.sendPush(userPhone, "您有一笔订单已完成交易,赶快去评价吧！For优欢迎您下次惠顾", 1);
                     }
                 }).start();
-
             } else {
                 map.put(Constants.STATUS, Constants.FAILURE);
                 map.put(Constants.MESSAGE, "点击完成订单失败，请重试");
@@ -747,8 +735,7 @@ public class OrderController {
 
             map.put(Constants.STATUS, Constants.SUCCESS);
             map.put(Constants.MESSAGE, "获取订单成功！");
-            map.put("orderList", JSONArray.parse(JSON
-                    .toJSONStringWithDateFormat(orders, "yyyy-MM-dd")));
+            map.put("orderList", JSONArray.parse(JSON.toJSONStringWithDateFormat(orders, "yyyy-MM-dd")));
         } catch (Exception e) {
             map.put(Constants.STATUS, Constants.FAILURE);
             map.put(Constants.MESSAGE, "获取订单失败！");
@@ -762,9 +749,7 @@ public class OrderController {
      */
     @RequestMapping("/setDeliverAdmin")
     @ResponseBody
-    public Map<String, Object> setDeliverAdmin(
-            @RequestParam String togetherId,
-            @RequestParam final String adminPhone) {
+    public Map<String, Object> setDeliverAdmin(@RequestParam String togetherId, @RequestParam final String adminPhone) {
         Map<String, Object> map = new HashMap<String, Object>();
         try {
             // 设置配送员
@@ -782,8 +767,7 @@ public class OrderController {
 
                     public void run() {
                         // 推送
-                        pushService.sendPush(adminPhone,
-                                "For优提醒您，一笔新订单已达到，请及时配送，辛苦您了。", 1);
+                        pushService.sendPush(adminPhone, "For优提醒您，一笔新订单已达到，请及时配送，辛苦您了。", 1);
 
                     }
                 }).start();
@@ -805,10 +789,8 @@ public class OrderController {
      */
     @RequestMapping("/DeliverAdminGetOrder")
     @ResponseBody
-    public Map<String, Object> deliverGetOrder(@RequestParam String phoneId, @RequestParam Integer campusId,
-                                               Integer limit, Integer page) {
+    public Map<String, Object> deliverGetOrder(@RequestParam String phoneId, @RequestParam Integer campusId, Integer limit, Integer page) {
         Map<String, Object> map = new HashMap<String, Object>();
-
         Map<String, Object> requestMap = new HashMap<String, Object>();
         requestMap.put("phoneId", phoneId);
         requestMap.put("campusId", campusId);
@@ -880,17 +862,14 @@ public class OrderController {
             // 如果是完成订单，直接显示交易价格，否则计算应收取的价格
             if (order.getPrice() == null) {
                 if (order.getIsDiscount() == 0) {
-                    order.setPrice(Float.parseFloat(df.format(order
-                            .getFoodPrice() * order.getOrderCount())));
+                    order.setPrice(Float.parseFloat(df.format(order.getFoodPrice() * order.getOrderCount())));
                 } else {
-                    order.setPrice(Float.parseFloat(df.format(order
-                            .getDiscountPrice() * order.getOrderCount())));
+                    order.setPrice(Float.parseFloat(df.format(order.getDiscountPrice() * order.getOrderCount())));
                 }
             }
         }
 
-        JSONArray jsonArray = JSONArray.parseArray(JSON
-                .toJSONStringWithDateFormat(lists, "yyyy-MM-dd"));
+        JSONArray jsonArray = JSONArray.parseArray(JSON.toJSONStringWithDateFormat(lists, "yyyy-MM-dd"));
 
         long totalCount = orderService.getPCSimpleOrdersCount(paramMap);
         map.put("rows", jsonArray);
@@ -903,8 +882,7 @@ public class OrderController {
      */
     @RequestMapping(value = "/setOrderInvalid", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Object> setOrderInvalid(
-            @RequestParam String togetherId) {
+    public Map<String, Object> setOrderInvalid(@RequestParam String togetherId) {
         Map<String, Object> resultMap = new HashMap<String, Object>();
 
         try {
@@ -933,17 +911,14 @@ public class OrderController {
      */
     @RequestMapping(value = "getOrdersByDate")
     @ResponseBody
-    public Map<String, Object> getOrdersByDate(String date,
-                                               @RequestParam Integer campusId, Integer limit, Integer page) {
+    public Map<String, Object> getOrdersByDate(String date, @RequestParam Integer campusId, Integer limit, Integer page) {
         Map<String, Object> resultMap = new HashMap<String, Object>();
         DecimalFormat df = new DecimalFormat("####.00");
-
         try {
             if (date.equals("") || date.equals("null"))
                 date = null;
             else
-                date = date.replace("年", "-").replace("月", "-")
-                        .replace("日", "");
+                date = date.replace("年", "-").replace("月", "-").replace("日", "");
             Map<String, Object> paramMap = new HashMap<String, Object>();
             paramMap.put("date", date);
             paramMap.put("campusId", campusId);
@@ -954,16 +929,14 @@ public class OrderController {
             }
 
             System.out.println(date);
-            List<DeliverOrder> deliverOrders = orderService
-                    .selectOrdersByDate(paramMap);
+            List<DeliverOrder> deliverOrders = orderService.selectOrdersByDate(paramMap);
             Float totalPrice = 0f;
             for (DeliverOrder deliverOrder : deliverOrders) {
                 String togetherId = deliverOrder.getTogetherId();
                 System.out.println(JSON.toJSON(deliverOrder.getTogetherDate()));
                 // 获取订单食品集
                 paramMap.put("togetherId", togetherId);
-                List<DeliverChildOrder> deliverChildOrders = orderService
-                        .getAllChildOrders(paramMap);
+                List<DeliverChildOrder> deliverChildOrders = orderService.getAllChildOrders(paramMap);
                 Float priceFloat = 0f;
 
                 // 获取该笔订单总价
@@ -978,16 +951,13 @@ public class OrderController {
                     priceFloat += deliverChildOrder.getPrice();
                 }
                 totalPrice += priceFloat;
-                deliverOrder.setTotalPrice(Float.parseFloat(df
-                        .format(priceFloat)));
+                deliverOrder.setTotalPrice(Float.parseFloat(df.format(priceFloat)));
                 deliverOrder.setOrderList(deliverChildOrders);
             }
 
             resultMap.put("total_price", df.format(totalPrice));
             resultMap.put("counts", deliverOrders.size());
-            resultMap.put("orderList", JSONArray.parse(JSON
-                    .toJSONStringWithDateFormat(deliverOrders,
-                            "yyyy-MM-dd HH:mm:ss")));
+            resultMap.put("orderList", JSONArray.parse(JSON.toJSONStringWithDateFormat(deliverOrders, "yyyy-MM-dd HH:mm:ss")));
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -1043,8 +1013,7 @@ public class OrderController {
             bigOrder.setReceiver(receiver);
             bigOrder.setStatus(status);
             resultMap.put("BigOrder",
-                    JSONArray.parse(JSON.toJSONStringWithDateFormat(bigOrder,
-                            "yyyy-MM-dd HH:mm:ss")));
+                    JSONArray.parse(JSON.toJSONStringWithDateFormat(bigOrder, "yyyy-MM-dd HH:mm:ss")));
             resultMap.put(Constants.STATUS, Constants.SUCCESS);
             resultMap.put(Constants.MESSAGE, "获取大订单信息成功");
         } else {
@@ -1060,8 +1029,7 @@ public class OrderController {
      */
     @RequestMapping("modifyOrderStatus")
     @ResponseBody
-    public Map<String, Object> modifyOrderStatus(@RequestParam final String togetherId,
-                                                 @RequestParam Short status, Long orderId) {
+    public Map<String, Object> modifyOrderStatus(@RequestParam final String togetherId, @RequestParam Short status, Long orderId) {
         Map<String, Object> resultMap = new HashMap<String, Object>();
         Map<String, Object> requestMap = new HashMap<String, Object>();
 
@@ -1092,10 +1060,7 @@ public class OrderController {
                     new Thread(new Runnable() {
 
                         public void run() { //推送
-
-                            pushService.sendPush(userPhone,
-                                    "您有一笔订单正在配送中,请稍候。感谢您对For优的支持", 1);
-
+                            pushService.sendPush(userPhone, "您有一笔订单正在配送中,请稍候。感谢您对For优的支持", 1);
                         }
                     }).start();
                     break;
@@ -1105,10 +1070,7 @@ public class OrderController {
                     new Thread(new Runnable() {
 
                         public void run() { //推送
-
-                            pushService.sendPush(userPhone,
-                                    "您有一笔订单已经完成,赶快去评价吧。感谢您对For优的支持", 1);
-
+                            pushService.sendPush(userPhone, "您有一笔订单已经完成,赶快去评价吧。感谢您对For优的支持", 1);
                         }
                     }).start();
                     break;
@@ -1297,10 +1259,9 @@ public class OrderController {
     @ResponseBody
     public JSONArray getInvalidOrder(Integer campusId) {
         Map<String, Object> paramMap = new HashMap<String, Object>();
-
         paramMap.put("campusId", campusId);
-
-        List<SuperAdminOrder> refundOrders = orderService.getPCInvalidOrders(paramMap);  //PC获取无效订单
+        // PC获取无效订单
+        List<SuperAdminOrder> refundOrders = orderService.getPCInvalidOrders(paramMap);
         return JSONArray.parseArray(JSON.toJSONStringWithDateFormat(refundOrders, "yyyy-MM-dd"));
     }
 
@@ -1342,7 +1303,6 @@ public class OrderController {
     @ResponseBody
     public Map<String, Object> refund(@RequestParam String togetherId, Float totalPrice) {
         Map<String, Object> resultMap = new HashMap<String, Object>();
-
         try {
             Map<String, Object> paramMap = new HashMap<String, Object>();
             paramMap.put("togetherId", togetherId);
@@ -1415,10 +1375,9 @@ public class OrderController {
         Map<String, Object> paramMap = new HashMap<String, Object>();
         Date dateStart;
         Date dateEnd;
-        List<TradeInfo> tradeList = new ArrayList<TradeInfo>();
 
+        List<TradeInfo> tradeList = new ArrayList<TradeInfo>();
         paramMap.put("campusId", campusId);
-        //System.out.println("month="+month);
         //如果month不为空，说明切换了月份；但是注意month为本月的时候，此时是下面的情况
         if (month != null && !month.equals(null) && !month.equals("") && !CalendarTool.checkIsThisMonth(month)) {
             Map<String, Date> dateMap = CalendarTool.getFirstAndLastDayOfMonth(month);
@@ -1463,7 +1422,6 @@ public class OrderController {
         todayInfo.setTradeVolumeWeChatPay(orderService.getTradeVolumeByCampusId(paramMap));
         tradeList.add(todayInfo);
         paramMap.remove("payWay");
-
         //本周订单数、销售额
         dateStart = CalendarTool.getMondayOfThisWeek();
         dateEnd = CalendarTool.getSundayOfThisWeek();
@@ -1503,12 +1461,11 @@ public class OrderController {
         //获取指定时间段、指定校区、指定支付方式的订单交易额
         monthInfo.setTradeVolumeWeChatPay(orderService.getTradeVolumeByCampusId(paramMap));
         tradeList.add(monthInfo);
-
         return (JSONArray) JSON.toJSON(tradeList);
     }
 
     /**
-     * 删除订单
+     * 删除订单(get)
      */
     @RequestMapping("/deleteOrderTrue")
     @ResponseBody
