@@ -2,97 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0f09bb-0116-4d62-acc3-2a6782ad438a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/flash/ZeroClipboard.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/OpenSans-Light-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/OpenSans-Regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/colbg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/bootstrap-editable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/bootstrap-editable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/bootstrap-table-editable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/bootstrap-table-export.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/bootstrap-table.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/bootstrap-table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/jquery.validate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/messages_cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap-table/tableExport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/bootstrap/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/docs.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/sidenav.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/customize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/docs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/ie-emulation-modes-warning.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/ie10-viewport-bug-workaround.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/ie8-responsive-file-warning.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/sidenav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap-datepicker3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap-datepicker3.standalone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap-editable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap-switch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap-table.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/docs.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/mainstyle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/order.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/push_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/sidenav.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-datepicker.zh-CN.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-editable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-switch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-table-editable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-table-editable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-table-export.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-table-export.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-table-zh-CN.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-table.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/customize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/docs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/flotr2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/ga.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/highcharts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/ie-emulation-modes-warning.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/ie10-viewport-bug-workaround.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/ie8-responsive-file-warning.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jQuery.md5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery-1.7.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/sidenav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/sign.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/tableExport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.html" afterPath="$PROJECT_DIR$/web/login.html" />
     </list>
     <ignored path="spring-server-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -178,9 +88,10 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-730">
-              <caret line="76" column="41" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="41" />
+            <state relative-caret-position="367">
+              <caret line="171" column="36" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
               <folding>
+                <element signature="e#1277#1363#0" expanded="false" />
                 <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -881,12 +792,12 @@
       <workItem from="1482563620891" duration="18974000" />
       <workItem from="1482756518674" duration="5306000" />
       <workItem from="1482832381211" duration="6692000" />
-      <workItem from="1482931702522" duration="1798000" />
+      <workItem from="1482931702522" duration="2190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32770000" />
+    <option name="totallyTimeSpent" value="33162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-44" y="24" width="1266" height="734" extended-state="0" />
@@ -1368,9 +1279,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="76" column="41" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="41" />
+        <state relative-caret-position="367">
+          <caret line="171" column="36" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="36" />
           <folding>
+            <element signature="e#1277#1363#0" expanded="false" />
             <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
