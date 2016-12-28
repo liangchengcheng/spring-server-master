@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0f09bb-0116-4d62-acc3-2a6782ad438a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lcc/controller/CampusController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lcc/controller/FoodController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/lcc/controller/HotSearchController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="spring-server-master.iws" />
@@ -28,204 +32,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PackageOrderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/controller/PackageOrderController.java">
+      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+            <state relative-caret-position="143">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/controller/NewsController.java">
+      <file leaf-file-name="spring-mybatis.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="173" column="18" selection-start-line="173" selection-start-column="15" selection-end-line="173" selection-end-column="18" />
+            <state relative-caret-position="533">
+              <caret line="52" column="19" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HotSearchController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/controller/HotSearchController.java">
+      <file leaf-file-name="spring.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="102" column="75" selection-start-line="102" selection-start-column="69" selection-end-line="102" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#944#960#0" expanded="true" />
-                <element signature="e#1366#1382#0" expanded="true" />
-                <element signature="e#1455#1471#0" expanded="true" />
-                <element signature="e#2354#2370#0" expanded="true" />
-                <element signature="e#2442#2458#0" expanded="true" />
-                <element signature="e#3344#3360#0" expanded="true" />
-                <element signature="e#3433#3449#0" expanded="true" />
-                <element signature="e#4400#4416#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FoodController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/controller/FoodController.java">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-309">
-              <caret line="1309" column="76" selection-start-line="1309" selection-start-column="76" selection-end-line="1309" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-                <element signature="e#1584#1585#0" expanded="true" />
-                <element signature="e#1630#1631#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-                <element signature="e#1760#1761#0" expanded="true" />
-                <element signature="e#2060#2076#0" expanded="true" />
-                <element signature="e#2148#2164#0" expanded="true" />
-                <element signature="e#3569#3585#0" expanded="true" />
-                <element signature="e#3706#3714#0" expanded="true" />
-                <element signature="e#3773#3790#0" expanded="true" />
-                <element signature="e#3848#3864#0" expanded="true" />
-                <element signature="e#8015#8031#0" expanded="true" />
-                <element signature="e#8161#8177#0" expanded="true" />
-                <element signature="e#9667#9683#0" expanded="true" />
-                <element signature="e#9756#9772#0" expanded="true" />
-                <element signature="e#11358#11374#0" expanded="true" />
-                <element signature="e#11447#11463#0" expanded="true" />
-                <element signature="e#12861#12877#0" expanded="true" />
-                <element signature="e#12932#12948#0" expanded="true" />
-                <element signature="e#13752#13758#0" expanded="true" />
-                <element signature="e#13831#13847#0" expanded="true" />
-                <element signature="e#14461#14477#0" expanded="true" />
-                <element signature="e#14612#14628#0" expanded="true" />
-                <element signature="e#16394#16410#0" expanded="true" />
-                <element signature="e#18329#18345#0" expanded="true" />
-                <element signature="e#19078#19094#0" expanded="true" />
-                <element signature="e#19167#19183#0" expanded="true" />
-                <element signature="e#20109#20125#0" expanded="true" />
-                <element signature="e#20198#20214#0" expanded="true" />
-                <element signature="e#21132#21148#0" expanded="true" />
-                <element signature="e#21221#21237#0" expanded="true" />
-                <element signature="e#22435#22451#0" expanded="true" />
-                <element signature="e#22874#22890#0" expanded="true" />
-                <element signature="e#27224#27240#0" expanded="true" />
-                <element signature="e#27375#27391#0" expanded="true" />
-                <element signature="e#30338#30346#0" expanded="true" />
-                <element signature="e#31482#31498#0" expanded="true" />
-                <element signature="e#36125#36141#0" expanded="true" />
-                <element signature="e#37703#37719#0" expanded="true" />
-                <element signature="e#37791#37807#0" expanded="true" />
-                <element signature="e#38856#38872#0" expanded="true" />
-                <element signature="e#38945#38961#0" expanded="true" />
-                <element signature="e#39820#39836#0" expanded="true" />
-                <element signature="e#39908#39924#0" expanded="true" />
-                <element signature="e#40363#40377#0" expanded="true" />
-                <element signature="e#41133#41149#0" expanded="true" />
-                <element signature="e#45575#45591#0" expanded="true" />
-                <element signature="e#46199#46215#0" expanded="true" />
-                <element signature="e#46683#46699#0" expanded="true" />
-                <element signature="e#46753#46769#0" expanded="true" />
-                <element signature="e#47657#47673#0" expanded="true" />
-                <element signature="e#47730#47746#0" expanded="true" />
-                <element signature="e#49029#49045#0" expanded="true" />
-                <element signature="e#49102#49118#0" expanded="true" />
-                <element signature="e#50019#50035#0" expanded="true" />
-                <element signature="e#50092#50108#0" expanded="true" />
-                <element signature="e#50903#50919#0" expanded="true" />
-                <element signature="e#50992#51008#0" expanded="true" />
-                <element signature="e#51280#51288#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CampusController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/controller/CampusController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1033#1034#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1372#1388#0" expanded="true" />
-                <element signature="e#1810#1826#0" expanded="true" />
-                <element signature="e#1899#1915#0" expanded="true" />
-                <element signature="e#2629#2645#0" expanded="true" />
-                <element signature="e#2717#2733#0" expanded="true" />
-                <element signature="e#3562#3578#0" expanded="true" />
-                <element signature="e#3635#3651#0" expanded="true" />
-                <element signature="e#5165#5181#0" expanded="true" />
-                <element signature="e#5253#5269#0" expanded="true" />
-                <element signature="e#5962#5978#0" expanded="true" />
-                <element signature="e#6034#6050#0" expanded="true" />
-                <element signature="e#6471#6487#0" expanded="true" />
-                <element signature="e#7009#7025#0" expanded="true" />
-                <element signature="e#7079#7095#0" expanded="true" />
-                <element signature="e#7149#7165#0" expanded="true" />
-                <element signature="e#8065#8081#0" expanded="true" />
-                <element signature="e#8135#8151#0" expanded="true" />
-                <element signature="e#9151#9167#0" expanded="true" />
-                <element signature="e#9221#9237#0" expanded="true" />
-                <element signature="e#10214#10230#0" expanded="true" />
-                <element signature="e#10284#10300#0" expanded="true" />
-                <element signature="e#10354#10370#0" expanded="true" />
-                <element signature="e#11298#11299#0" expanded="true" />
-                <element signature="e#11347#11348#0" expanded="true" />
-                <element signature="e#11524#11540#0" expanded="true" />
-                <element signature="e#11594#11610#0" expanded="true" />
-                <element signature="e#12853#12869#0" expanded="true" />
-                <element signature="e#12923#12939#0" expanded="true" />
-                <element signature="e#14037#14053#0" expanded="true" />
-                <element signature="e#14125#14141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/controller/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#editUserOrder#0;class#OrderController#0" expanded="false" />
-                <element signature="method#getUserSuccessOrder#0;class#OrderController#0" expanded="false" />
-                <element signature="docComment;method#deleteOrder#0;class#OrderController#0" expanded="false" />
-                <element signature="e#41531#41562#0" expanded="false" />
-                <element signature="method#deleteOrder#0;class#OrderController#0" expanded="false" />
-                <element signature="docComment;method#purchaseImmediately#0;class#OrderController#0" expanded="false" />
-                <element signature="e#42363#42402#0" expanded="false" />
-                <element signature="docComment;method#cancelOrderWithRefund#0;class#OrderController#0" expanded="false" />
-                <element signature="e#45759#45800#0" expanded="false" />
-                <element signature="method#cancelOrderWithRefund#0;class#OrderController#0" expanded="false" />
-                <element signature="docComment;method#getRefundOrder#0;class#OrderController#0" expanded="false" />
-                <element signature="e#46716#46750#0" expanded="false" />
-                <element signature="docComment;method#getInvalidOrder#0;class#OrderController#0" expanded="false" />
-                <element signature="e#47367#47403#0" expanded="false" />
-                <element signature="method#getInvalidOrder#0;class#OrderController#0" expanded="false" />
-                <element signature="method#cancelRefund#0;class#OrderController#0" expanded="false" />
-                <element signature="e#48829#48855#0" expanded="false" />
-                <element signature="method#refund#0;class#OrderController#0" expanded="false" />
-                <element signature="e#50536#50569#0" expanded="false" />
-                <element signature="method#confirmRefund#0;class#OrderController#0" expanded="false" />
-                <element signature="docComment;method#deleteOrderTrue#0;class#OrderController#0" expanded="false" />
-                <element signature="e#56076#56111#0" expanded="false" />
-                <element signature="method#deleteOrderTrue#0;class#OrderController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/service/OrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="102" column="12" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+            <state relative-caret-position="-166">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -257,10 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lcc/mapping/OrderMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lcc/mapping/KeyMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lcc/mapping/HotSearchMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lcc/mapping/FoodSpecialMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcc/mapping/FoodMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcc/mapping/FoodCommentMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcc/mapping/FoodCategoryMapper.xml" />
@@ -308,6 +145,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lcc/controller/HotSearchController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcc/controller/FoodController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lcc/controller/CampusController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
       </list>
     </option>
   </component>
@@ -325,8 +166,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="411" />
-    <option name="y" value="26" />
+    <option name="x" value="105" />
+    <option name="y" value="24" />
     <option name="width" value="1266" />
     <option name="height" value="734" />
   </component>
@@ -407,34 +248,8 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-server-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-server-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lcc" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -465,10 +280,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -480,6 +291,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -918,16 +737,16 @@
       <updated>1482563619248</updated>
       <workItem from="1482563620891" duration="18974000" />
       <workItem from="1482756518674" duration="5306000" />
-      <workItem from="1482832381211" duration="5101000" />
+      <workItem from="1482832381211" duration="5926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29381000" />
+    <option name="totallyTimeSpent" value="30206000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="411" y="26" width="1266" height="734" extended-state="0" />
-    <editor active="false" />
+    <frame x="105" y="24" width="1266" height="734" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -942,7 +761,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20915033" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20915033" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -975,49 +794,11 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/serviceimpl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/serviceimpl/SellerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/serviceimpl/ReceiverServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/serviceimpl/PushServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/serviceimpl/PreferentialServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lcc/serviceimpl/PayServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1569,5 +1350,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="52" column="19" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>spring-server-master:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spring-server-master</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.47208124" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
