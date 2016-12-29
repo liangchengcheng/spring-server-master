@@ -1,5 +1,5 @@
 //<script src="/foryou/js/jquery.cookie.js"></script>
-document.write("<script src='/foryou/js/jquery.cookie.js'><\/script>");
+document.write("<script src='../js/jquery.cookie.js'><\/script>");
  /* 
  */
 // 返回cookies字符串中指定键对应的值

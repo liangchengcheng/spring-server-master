@@ -329,7 +329,7 @@
                 }, "json");
             }
 
-            
+
         } else {
             //隐藏校区管理和校区管理员管理
             $("#li-campus-admin").hide();
@@ -365,8 +365,8 @@
             $(".campus-item").on("click", function (event) {
                 //alert($(this).text());
                 var campusName = $(this).text();
-                $.getJSON("campus/getIdByName.do?server=56846a8a2fee49d14901d39cc48b8b2a&campusName=" + campusName,
-                        function (data) {
+                $.getJSON("campus/getIdByName.do?server=56846a8a2fee49d14901d39cc48b8b2a&campusName="
+                     + campusName, function (data) {
                     console.log(data);
                     console.log(data.campusId);
                     //document.cookie="campusId="+data.campusId;
